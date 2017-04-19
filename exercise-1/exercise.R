@@ -24,7 +24,7 @@ two.wheel.20.mpg <- vehicles[vehicles$drive == '2-Wheel Drive' & vehicles$cty > 
 # Of those vehicles, what is the vehicle ID of the vehicle with the worst hwy mpg?
 worst.hwy <- two.wheel.20.mpg$id[two.wheel.20.mpg$hwy == min(two.wheel.20.mpg$hwy)]
 
-# Write a function that takes a `year` and a `make` as parameters, and returns 
+# Write a function that takes a `year` and a `make` as parameters, and returns
 # The vehicle that gets the most hwy miles/gallon of vehicles of that make in that year
 MakeYearFilter <- function(make, year) {
   filtered <- vehicles[vehicles$make == make & vehicles$year == year,]
